@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Proceso Monitorio en Colombia — Guía gratuita en lenguaje claro</title>
+<meta name="description" content="Guía práctica y gratuita sobre el Proceso Monitorio del Trabajo y la Seguridad Social (Ley 2452 de 2025, Arts. 286 a 291): qué es, requisitos, trámite paso a paso y checklist descargable." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Fraunces', serif; }
+  .font-mono { font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; }
+
+  .stamp-ring {
+    animation: spin 40s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(45deg); }
+  .chev { transition: transform .25s ease; }
+
+  .step-line { background: repeating-linear-gradient(to bottom, #D9D6C9 0, #D9D6C9 6px, transparent 6px, transparent 12px); }
+</style>
+</head>
+<body class="bg-base text-ink900 antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 text-base tracking-tight">
+      <span class="w-8 h-8 rounded-full border border-amber/70 flex items-center justify-center font-mono text-[10px] text-amberlt">286</span>
+      <span class="font-display text-lg text-white">Proceso Monitorio</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-white/75">
+      <a href="#que-es" class="hover:text-white transition">Qué es</a>
+      <a href="#tramite" class="hover:text-white transition">Trámite</a>
+      <a href="#recursos" class="hover:text-white transition">Recursos</a>
+      <a href="#faq" class="hover:text-white transition">Preguntas</a>
+    </nav>
+    <a href="#recursos" class="text-sm font-medium bg-amber text-ink3 px-4 py-2 rounded-full hover:bg-amberlt transition">Descargar guía</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative bg-ink text-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+    <div>
+      <p class="font-mono text-xs text-amberlt uppercase mb-6">Guía gratuita · Lenguaje claro · Ley 2452 de 2025</p>
+      <h1 class="font-display text-4xl sm:text-5xl md:text-[3.4rem] leading-[1.08] text-white mb-6">
+        Entienda el proceso monitorio<br class="hidden sm:block"> sin enredarse en el expediente
+      </h1>
+      <p class="text-white/75 text-lg leading-relaxed max-w-xl mb-9">
+        Es la ruta más corta que existe hoy en Colombia para cobrar una deuda laboral clara: sin título ejecutivo previo, con un juez que exige pago en cinco días. Aquí cada paso queda amarrado al artículo exacto de la ley — para estudiantes, abogados en formación y cualquier persona que necesite entenderlo sin enredos.
+      </p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="#tramite" class="bg-amber text-ink3 font-semibold px-6 py-3.5 rounded-full hover:bg-amberlt transition">Ver el paso a paso ↓</a>
+        <a href="#recursos" class="border border-white/25 text-white px-6 py-3.5 rounded-full hover:bg-white/10 transition">Descargar checklist gratis</a>
+      </div>
+      <p class="text-white/40 text-xs font-mono mt-8">100% gratis · Sin registro · Consulta permanente</p>
+    </div>
+
+    <!-- Signature visual: stamp badge -->
+    <div class="relative mx-auto flex items-center justify-center">
+      <svg viewBox="0 0 300 300" class="w-64 h-64 md:w-80 md:h-80 stamp-ring">
+        <defs>
+          <path id="ring" d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0" />
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="none" stroke="#E76943" stroke-width="1.2" stroke-dasharray="2 6" />
+        <text font-family="IBM Plex Mono" font-size="11.5" letter-spacing="3" fill="#FBC146">
+          <textPath href="#ring" startOffset="0%">PROCESO MONITORIO · LEY 2452 DE 2025 · ARTS. 286 A 291 · </textPath>
+        </text>
+      </svg>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-40 h-40 md:w-48 md:h-48 rounded-full border border-white/15 flex flex-col items-center justify-center text-center px-4">
+          <span class="font-mono text-[11px] text-amberlt mb-1">CPTSS</span>
+          <span class="font-display text-2xl md:text-3xl leading-tight text-white">5 días<br>para pagar</span>
+          <span class="font-mono text-[10px] text-white/50 mt-1">Art. 288</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUÉ ES ============ -->
+<section id="que-es" class="bg-base">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="font-mono text-xs text-muted uppercase mb-4">Art. 286 · Naturaleza y procedencia</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-8 max-w-2xl">¿Qué es el proceso monitorio, explicado sin tecnicismos?</h2>
+
+    <div class="grid md:grid-cols-2 gap-12 mb-14">
+      <div class="space-y-5 text-ink900/85 leading-relaxed">
+        <p>Imagine que a alguien le deben una suma de dinero clara —de origen laboral o de seguridad social— y todavía no tiene ese documento perfecto que la ley llama "título ejecutivo". Antes, la única salida era un proceso ordinario, largo y con varias etapas.</p>
+        <p>El <strong>proceso monitorio</strong> es un atajo: usted le cuenta al juez, con precisión, cuánto le deben y por qué. Si la demanda está bien hecha, el juez no discute primero — <strong>le ordena al deudor pagar en cinco días</strong>, o explicar por qué no debe.</p>
+        <p>Si el deudor calla, la ley entiende que aceptó, y el juez dicta sentencia de una vez. Solo si el deudor se defiende con razones de fondo, el proceso se abre a una audiencia.</p>
+      </div>
+      <div class="bg-ink rounded-2xl p-8 text-white">
+        <p class="font-mono text-xs text-amberlt uppercase mb-4">Requisitos de procedencia</p>
+        <ul class="space-y-4 text-sm text-white/85">
+          <li class="flex gap-3"><span class="font-mono text-[#8B93E8] shrink-0">01</span><span><strong class="text-white">Origen:</strong> relación de trabajo o de la seguridad social, sin importar su naturaleza.</span></li>
+          <li class="flex gap-3"><span class="font-mono text-amberlt shrink-0">02</span><span><strong class="text-white">Cuantía:</strong> la deuda no puede superar <strong>20 salarios mínimos</strong> mensuales vigentes.</span></li>
+          <li class="flex gap-3"><span class="font-mono text-[#D394D8] shrink-0">03</span><span><strong class="text-white">Obligación pura:</strong> el pago no puede depender de una contraprestación pendiente del acreedor.</span></li>
+          <li class="flex gap-3"><span class="font-mono text-[#C9825F] shrink-0">04</span><span><strong class="text-white">Forma:</strong> la demanda se puede presentar de manera virtual o verbal.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border border-line rounded-2xl p-6 md:p-8 bg-base2">
+      <p class="font-display text-lg mb-2">¿Y si la deuda que quiero cobrar no es laboral?</p>
+      <p class="text-sm text-muted leading-relaxed max-w-3xl">
+        Esta guía explica el <strong>proceso monitorio laboral y de la seguridad social</strong> (Ley 2452 de 2025, Arts. 286 a 291), el que aplica entre trabajador y empleador, o frente a EPS, ARL y fondos de pensiones. Para deudas civiles o comerciales entre particulares existe una figura hermana —el proceso monitorio del Código General del Proceso, Arts. 419 a 421— con reglas distintas que no cubre esta página.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRÁMITE ============ -->
+<section id="tramite" class="bg-ink3 text-white">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="font-mono text-xs text-amberlt uppercase mb-4">Arts. 287 a 291 · Ruta procesal</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-4 max-w-2xl">El trámite, paso a paso</h2>
+    <p class="text-white/60 max-w-2xl mb-16">Seis momentos. Cada uno con su propio reloj y su propia consecuencia si no se actúa a tiempo.</p>
+
+    <div class="relative">
+      <div class="hidden md:block absolute left-[27px] top-2 bottom-2 w-px step-line"></div>
+
+      <!-- Step 1 -->
+      <div class="relative md:pl-20 mb-14">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full border border-[#8B93E8]/60 items-center justify-center font-mono text-sm text-[#8B93E8] bg-ink3">01</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-[#8B93E8] text-sm">01</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">La demanda</h3>
+          <span class="font-mono text-[11px] text-[#8B93E8] border border-[#8B93E8]/40 rounded-full px-2 py-0.5">Art. 287</span>
+        </div>
+        <p class="text-white/70 max-w-2xl leading-relaxed">Debe contar los hechos numerados, con el origen exacto de la deuda, su monto y sus componentes — y afirmar que el pago no depende de nada que el acreedor deba cumplir primero. Si no se tienen los documentos de soporte, se declara bajo juramento por qué no se tienen.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative md:pl-20 mb-14">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full border border-amber/60 items-center justify-center font-mono text-sm text-amber bg-ink3">02</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-amber text-sm">02</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">Revisión del juez: admite o inadmite</h3>
+          <span class="font-mono text-[11px] text-amber border border-amber/40 rounded-full px-2 py-0.5">Art. 66</span>
+        </div>
+        <p class="text-white/70 max-w-2xl leading-relaxed">Si falta algo, el juez señala el defecto y da cinco días para corregirlo. Si se supera este filtro, el proceso avanza directo al requerimiento de pago.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative md:pl-20 mb-14">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full border border-[#D394D8] items-center justify-center font-mono text-sm text-[#D394D8] bg-ink3 ring-2 ring-[#D394D8]/30">03</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-[#D394D8] text-sm">03</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">Requerimiento de pago</h3>
+          <span class="font-mono text-[11px] text-[#D394D8] border border-[#D394D8]/40 rounded-full px-2 py-0.5">Art. 288</span>
+        </div>
+        <p class="text-white/70 max-w-2xl leading-relaxed">El juez le ordena al deudor, notificado personalmente, que pague en <strong class="text-white">cinco días</strong> o explique por qué no debe. Este auto no admite ningún recurso. Si el deudor paga todo, el proceso termina ahí mismo.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="relative md:pl-20 mb-14">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full border border-[#C9825F]/70 items-center justify-center font-mono text-sm text-[#C9825F] bg-ink3">04</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-[#C9825F] text-sm">04</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">Tres caminos posibles</h3>
+          <span class="font-mono text-[11px] text-[#C9825F] border border-[#C9825F]/40 rounded-full px-2 py-0.5">Art. 289–290</span>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-4 mt-4 max-w-3xl">
+          <div class="bg-white/5 rounded-xl p-4 border-t-2 border-[#8B93E8]">
+            <p class="text-sm font-semibold text-white mb-1">Guarda silencio</p>
+            <p class="text-xs text-white/60 leading-relaxed">Se dicta sentencia de condena de inmediato.</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4 border-t-2 border-[#D394D8]">
+            <p class="text-sm font-semibold text-white mb-1">Se opone parcialmente</p>
+            <p class="text-xs text-white/60 leading-relaxed">Hay sentencia por la parte que no discutió.</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4 border-t-2 border-amber">
+            <p class="text-sm font-semibold text-white mb-1">Presenta excepciones de mérito</p>
+            <p class="text-xs text-white/60 leading-relaxed">El caso pasa a audiencia.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="relative md:pl-20 mb-14">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full border border-[#8B93E8]/60 items-center justify-center font-mono text-sm text-[#8B93E8] bg-ink3">05</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-[#8B93E8] text-sm">05</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">Audiencia (solo si hubo excepciones)</h3>
+          <span class="font-mono text-[11px] text-[#8B93E8] border border-[#8B93E8]/40 rounded-full px-2 py-0.5">Art. 290</span>
+        </div>
+        <p class="text-white/70 max-w-2xl leading-relaxed">Todo ocurre en un solo acto: el acreedor contradice, se practican las pruebas, se interroga al deudor si se pidió, y el juez decide ahí mismo. No hay una segunda oportunidad para completar pruebas.</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="relative md:pl-20">
+        <div class="hidden md:flex absolute left-0 top-0 w-14 h-14 rounded-full bg-amber items-center justify-center font-mono text-sm text-ink3">06</div>
+        <div class="flex items-center gap-3 mb-2 md:hidden font-mono text-amberlt text-sm">06</div>
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <h3 class="font-display text-xl">Sentencia y cobro</h3>
+          <span class="font-mono text-[11px] text-amberlt border border-amber/40 rounded-full px-2 py-0.5">Art. 291</span>
+        </div>
+        <p class="text-white/70 max-w-2xl leading-relaxed">Con sentencia a favor del acreedor, proceden las medidas cautelares y, si no hay pago voluntario, el remate de bienes — con el mismo mecanismo ya usado en el proceso ejecutivo laboral.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECURSOS ============ -->
+<section id="recursos" class="bg-base">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="font-mono text-xs text-muted uppercase mb-4">Para guardar en favoritos</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-4 max-w-2xl">Herramientas para usar hoy mismo</h2>
+    <p class="text-muted max-w-2xl mb-14">Esta página vive en un enlace fijo y gratuito, sin necesidad de dominio ni servidor de pago. Guárdela — seguirá aquí la próxima vez que la necesite.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=177617#286" target="_blank" rel="noopener"
+         class="group block border border-line rounded-2xl p-8 bg-white hover:border-ink transition">
+        <span class="font-mono text-[11px] text-muted uppercase">Fuente institucional</span>
+        <h3 class="font-display text-2xl mt-3 mb-3 group-hover:text-ink">Ley 2452 de 2025, texto completo</h3>
+        <p class="text-sm text-muted leading-relaxed mb-6">Régimen Legal de Bogotá D.C. — el articulado oficial del Código Procesal del Trabajo y de la Seguridad Social, con enlace directo a los artículos del proceso monitorio.</p>
+        <span class="inline-flex items-center gap-2 text-sm font-semibold text-ink">Abrir la norma oficial <span class="group-hover:translate-x-1 transition">→</span></span>
+      </a>
+
+      <a href="checklist-demanda-monitoria.pdf" download
+         class="group block border border-line rounded-2xl p-8 bg-ink text-white hover:bg-ink2 transition">
+        <span class="font-mono text-[11px] text-amberlt uppercase">Descarga gratuita · PDF · 1 página</span>
+        <h3 class="font-display text-2xl mt-3 mb-3">Checklist de la demanda monitoria</h3>
+        <p class="text-sm text-white/70 leading-relaxed mb-6">Los nueve requisitos del artículo 287 convertidos en una lista de verificación, para revisar antes de radicar.</p>
+        <span class="inline-flex items-center gap-2 text-sm font-semibold text-amberlt">Descargar checklist <span class="group-hover:translate-x-1 transition">↓</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="bg-base2">
+  <div class="max-w-4xl mx-auto px-6 py-20 md:py-28">
+    <p class="font-mono text-xs text-muted uppercase mb-4">Dudas frecuentes</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-14">Preguntas frecuentes</h2>
+
+    <div class="divide-y divide-line">
+      <details class="group py-6" open>
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display text-lg pr-4">¿Qué pasa si el demandado no paga ni contesta?</span>
+          <span class="chev shrink-0 font-mono text-xl text-muted">+</span>
+        </summary>
+        <p class="text-muted leading-relaxed mt-4 max-w-2xl">El juez dicta directamente la sentencia de condena y el proceso sigue hacia la ejecución, sin necesidad de más trámite. El silencio, tras notificación personal válida, se toma como aceptación de la deuda tal como fue planteada.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display text-lg pr-4">¿En qué se diferencia del proceso ejecutivo laboral?</span>
+          <span class="chev shrink-0 font-mono text-xl text-muted">+</span>
+        </summary>
+        <p class="text-muted leading-relaxed mt-4 max-w-2xl">El proceso ejecutivo exige que usted ya tenga un título ejecutivo perfecto (Art. 267): una sentencia, una conciliación, un acuerdo en firme. El monitorio no lo exige — basta con contar la deuda de forma clara y precisa. A cambio, la posibilidad de defensa del deudor es más limitada.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display text-lg pr-4">¿Puedo apelar la sentencia si pierdo?</span>
+          <span class="chev shrink-0 font-mono text-xl text-muted">+</span>
+        </summary>
+        <p class="text-muted leading-relaxed mt-4 max-w-2xl">Por regla general, no. La ley excluye expresamente la apelación y el grado de consulta en este proceso, precisamente para mantenerlo rápido. Solo quedan disponibles remedios extraordinarios y tasados, en circunstancias muy puntuales.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display text-lg pr-4">¿Sirve para cobrar cualquier tipo de deuda?</span>
+          <span class="chev shrink-0 font-mono text-xl text-muted">+</span>
+        </summary>
+        <p class="text-muted leading-relaxed mt-4 max-w-2xl">No. Este proceso monitorio es exclusivo para obligaciones de origen laboral o de la seguridad social, hasta 20 salarios mínimos. Para deudas civiles o comerciales entre particulares, Colombia tiene un proceso monitorio distinto en el Código General del Proceso.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display text-lg pr-4">¿Necesito un abogado para presentar la demanda?</span>
+          <span class="chev shrink-0 font-mono text-xl text-muted">+</span>
+        </summary>
+        <p class="text-muted leading-relaxed mt-4 max-w-2xl">Como regla general sí: la comparecencia al proceso se hace por medio de abogado inscrito, salvo los casos puntuales en que la ley permite actuar directamente. Esta guía es un mapa para entender el camino, no un reemplazo de esa asesoría.</p>
+      </details>
+    </div>
+
+    <div class="mt-16 text-center">
+      <p class="font-display text-2xl mb-4">¿Le sirvió esta guía?</p>
+      <p class="text-muted mb-6">Compártala con quien la necesite — es gratuita y seguirá disponible en este mismo enlace.</p>
+      <a href="#top" class="inline-block bg-ink text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-ink2 transition">Volver al inicio ↑</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink3 text-white/50 text-sm">
+  <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between gap-6">
+    <div class="max-w-md">
+      <p class="font-display text-white text-base mb-2">Proceso Monitorio · Guía</p>
+      <p class="leading-relaxed">Este recurso ofrece información general en lenguaje claro sobre el proceso monitorio del trabajo y la seguridad social (Ley 2452 de 2025). No sustituye la asesoría de un abogado para un caso concreto.</p>
+    </div>
+    <div class="space-y-2">
+      <p><a href="https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=177617" target="_blank" rel="noopener" class="hover:text-white transition">Fuente normativa: Ley 2452 de 2025 ↗</a></p>
+      <p>Última actualización: <span id="fecha-actualizacion"></span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('fecha-actualizacion').textContent = new Date().toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+
+</body>
+</html>
